@@ -1,0 +1,68 @@
+name: Update Progress
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Run daily at 8:30 AM UTC (10:30 AM SAST)
+    - cron: '30 8 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Update progress
+      run: |
+        python3 scripts/update_progress.py
+        
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git commit -m "📊 Auto-update progress indicators [skip ci]"
+        git push
+        
+    - name: Create summary
+      if: always()
+      run: |
+        echo "## 📊 Progress Update Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        if [ "${{ steps.verify-changed-files.outputs.changed }}" == "true" ]; then
+          echo "✅ Progress indicators updated successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Changes Made:" >> $GITHUB_STEP_SUMMARY
+          echo "- Updated progress badge" >> $GITHUB_STEP_SUMMARY
+          echo "- Updated status badge" >> $GITHUB_STEP_SUMMARY
+          echo "- Updated overall progress counter" >> $GITHUB_STEP_SUMMARY
+          echo "- Updated phase progress bars" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "ℹ️ No progress changes detected." >> $GITHUB_STEP_SUMMARY
+        fi
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Next Steps:" >> $GITHUB_STEP_SUMMARY
+        echo "- Mark completed tasks with [x] in README.md" >> $GITHUB_STEP_SUMMARY
+        echo "- Progress will auto-update on next push or daily schedule" >> $GITHUB_STEP_SUMMARY
