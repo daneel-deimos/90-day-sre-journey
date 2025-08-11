@@ -1,0 +1,21 @@
+name: Validate Commit Messages
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-commits:
+    runs-on: ubuntu-latest
+    name: Validate Conventional Commits
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Validate Conventional Commits
+      uses: wagoid/commitlint-github-action@v5
+      with:
+        configFile: '.commitlintrc.json'
