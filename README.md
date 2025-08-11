@@ -3,9 +3,9 @@
 <div align="center">
 
 ![SRE](https://img.shields.io/badge/Site%20Reliability%20Engineering-Journey-orange)
-![Progress](https://img.shields.io/badge/Progress-0%25-yellow)
+![Progress](https://img.shields.io/badge/Progress-1%25-red)
 ![Days](https://img.shields.io/badge/Duration-90%20Days-blue)
-![Status](https://img.shields.io/badge/Status-Starting%20Aug%2011-green)
+![Status](https://img.shields.io/badge/Status-Day%201%20-%20Foundation-yellow)
 
 *From Software Engineer to SRE: A comprehensive learning path to master Site Reliability Engineering*
 
@@ -277,6 +277,7 @@ Detailed week-by-week execution plan with specific time allocations, learning ob
 - ✅ [Daily Checklist](docs/DAILY_CHECKLIST.md) - Day-by-day task breakdown with progress tracking
 - 🗺️ [Complete 90-Day Roadmap](docs/ROADMAP.md) - Executive summary and strategic approach
 - 📅 [Weekly Execution Guide](docs/WEEKLY_EXECUTION_GUIDE.md) - Detailed week-by-week implementation plan
+- 📊 [Progress Tracking System](scripts/progress_tracking.md) - **Automated progress updates and tracking**
 
 ### Books
 - 📖 [Site Reliability Engineering](https://sre.google/sre-book/) - Google
@@ -331,11 +332,11 @@ Detailed week-by-week execution plan with specific time allocations, learning ob
 
 ## 📈 Progress Tracking
 
-### Overall Progress: 0/90 days (0%)
+### Overall Progress: 1/90 days (1%)
 
 ```
-Foundation:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
-Technical:      ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
+Foundation:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 6%
+Technical:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 Production:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 ```
 
