@@ -129,6 +129,7 @@ scripts/
 2. **Check daily**: Progress updates automatically, but manual checks ensure accuracy
 3. **Use git**: All updates are tracked in version control
 4. **Customize**: Adjust weights and formulas in `update_progress.py` if needed
+5. **Follow conventions**: See [Contributing Guidelines](../docs/CONTRIBUTING.md) for commit message format
 
 ## 🎉 Benefits
 

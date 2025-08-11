@@ -278,6 +278,7 @@ Detailed week-by-week execution plan with specific time allocations, learning ob
 - 🗺️ [Complete 90-Day Roadmap](docs/ROADMAP.md) - Executive summary and strategic approach
 - 📅 [Weekly Execution Guide](docs/WEEKLY_EXECUTION_GUIDE.md) - Detailed week-by-week implementation plan
 - 📊 [Progress Tracking System](scripts/progress_tracking.md) - **Automated progress updates and tracking**
+- 🤝 [Contributing Guidelines](docs/CONTRIBUTING.md) - Commit message conventions and contribution rules
 
 ### Books
 - 📖 [Site Reliability Engineering](https://sre.google/sre-book/) - Google
