@@ -9,7 +9,7 @@
 
 *From Software Engineer to SRE: A comprehensive learning path to master Site Reliability Engineering*
 
-[Weekly Progress](#weekly-progress) • [Roadmap](docs/ROADMAP.md) • [Execution Guide](docs/WEEKLY_EXECUTION_GUIDE.md) • [Resources](#resources) • [Projects](#projects) • [Blog Posts](#blog-posts) • [Certifications](#certifications)
+[Weekly Progress](#weekly-progress) • [Daily Checklist](docs/DAILY_CHECKLIST.md) • [Roadmap](docs/ROADMAP.md) • [Execution Guide](docs/WEEKLY_EXECUTION_GUIDE.md) • [Resources](#resources) • [Projects](#projects) • [Blog Posts](#blog-posts) • [Certifications](#certifications)
 
 </div>
 
@@ -43,6 +43,13 @@ Incident management, CI/CD, service mesh, and chaos engineering
 ---
 
 ## 📖 Detailed Documentation
+
+### ✅ [Daily Checklist](docs/DAILY_CHECKLIST.md)
+Day-by-day breakdown with specific tasks, pre-session preparation, and progress tracking. Each daily entry includes:
+- Pre-session preparation checklist
+- Specific learning tasks and objectives
+- Post-session actions and GitHub updates
+- Note-taking sections for personal reflection
 
 ### 🗺️ [Complete Roadmap](docs/ROADMAP.md)
 Comprehensive 90-day roadmap with executive summary, critical learning priorities, and structured approach to transitioning from software engineering to SRE leadership. Includes detailed analysis of:
@@ -267,6 +274,7 @@ Detailed week-by-week execution plan with specific time allocations, learning ob
 ## 📚 Resources
 
 ### 📋 Learning Plans
+- ✅ [Daily Checklist](docs/DAILY_CHECKLIST.md) - Day-by-day task breakdown with progress tracking
 - 🗺️ [Complete 90-Day Roadmap](docs/ROADMAP.md) - Executive summary and strategic approach
 - 📅 [Weekly Execution Guide](docs/WEEKLY_EXECUTION_GUIDE.md) - Detailed week-by-week implementation plan
 
